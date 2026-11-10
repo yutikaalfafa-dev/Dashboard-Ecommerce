@@ -1,0 +1,104 @@
+:root {
+  --navy-primary: #1e293b;
+  --navy-secondary: #0f172a;
+  --accent-blue: #3b82f6;
+  --accent-light: #eff6ff;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8fafc;
+  color: #334155;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 260px;
+  background-color: var(--navy-secondary);
+  color: white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.sidebar-brand {
+  padding: 20px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-color: var(--navy-primary);
+  border-bottom: 1px solid #334155;
+}
+
+.sidebar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.sidebar-nav li a {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  color: #94a3b8;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.sidebar-nav li a:hover,
+.sidebar-nav li.active a {
+  color: white;
+  background-color: rgba(59, 130, 246, 0.15);
+  border-left: 4px solid var(--accent-blue);
+}
+
+.sidebar-nav li a i {
+  margin-right: 12px;
+  font-size: 1.1rem;
+}
+
+/* Main Content Wrapper */
+.main-content {
+  margin-left: 260px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar Styling */
+.top-navbar {
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Cards Stats */
+.stat-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Responsive Media Query */
+@media (max-width: 992px) {
+  .sidebar {
+    width: 70px;
+  }
+  .sidebar-brand span,
+  .sidebar-nav span {
+    display: none;
+  }
+  .main-content {
+    margin-left: 70px;
+  }
+}
