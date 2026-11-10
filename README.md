@@ -1,16 +1,69 @@
-# React + Vite
+# Dashboard E-Commerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Dashboard E-Commerce merupakan aplikasi web berbasis Dashboard Admin yang digunakan untuk mengelola produk toko online. Aplikasi ini dikembangkan menggunakan React JS 19 dan Vite dengan menerapkan fitur CRUD (Create, Read, Update, Delete) untuk memudahkan pengelolaan data produk, mulai dari menambahkan, menampilkan, mengubah, hingga menghapus produk.
 
-Currently, two official plugins are available:
+## Teknologi yang Digunakan
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- HTML5 dan HTML Semantik
+- CSS3
+- Bootstrap 5
+- JavaScript
+- DOM Manipulation
+- jQuery
+- React JS 19
+- Vite
 
-## React Compiler
+## Fitur Utama
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Dashboard statistik untuk menampilkan ringkasan data produk.
+- Menampilkan daftar produk beserta gambar, nama, kategori, harga, stok, dan diskon.
+- Menambahkan produk baru.
+- Mengubah informasi produk.
+- Menghapus produk dari daftar katalog.
+- Pencarian dan filter produk.
+- Menampilkan status ketersediaan stok produk.
+- Tampilan responsif untuk desktop, tablet, dan mobile.
 
-## Expanding the ESLint configuration
+## Struktur Folder
+dashboard-ecommerce/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── Sidebar.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── DashboardStats.jsx
+│   │   ├── ProductTable.jsx
+│   │   ├── ProductFormModal.jsx
+│   │   └── DeleteConfirmation.jsx
+│   ├── data/
+│   │   └── products.js
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── style.css
+├── index.html
+├── package.json
+└── README.md
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Cara Menjalankan Aplikasi
+
+Setelah seluruh dependensi berhasil diinstal, jalankan aplikasi Dashboard E-Commerce dengan langkah berikut:
+
+1. Buka terminal pada Visual Studio Code di dalam folder proyek `dashboard-ecommerce`.
+2. Ketik perintah berikut untuk menjalankan aplikasi:
+
+   ```bash
+   npm run dev
+   ```
+
+3. Tunggu hingga proses menjalankan server Vite selesai. Jika berhasil, terminal akan menampilkan alamat lokal aplikasi.
+4. Buka browser Google Chrome, kemudian akses alamat yang ditampilkan pada terminal, biasanya:
+
+   ```text
+   http://localhost:5173/
+   ```
+
+5. Setelah alamat berhasil dibuka, halaman Dashboard E-Commerce akan ditampilkan dan siap digunakan.
+
+6. Untuk menghentikan aplikasi, kembali ke terminal dan tekan `Ctrl + C`.
