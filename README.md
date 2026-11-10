@@ -67,3 +67,7 @@ Setelah seluruh dependensi berhasil diinstal, jalankan aplikasi Dashboard E-Comm
 5. Setelah alamat berhasil dibuka, halaman Dashboard E-Commerce akan ditampilkan dan siap digunakan.
 
 6. Untuk menghentikan aplikasi, kembali ke terminal dan tekan `Ctrl + C`.
+
+Menunjukkan hasil tampilan halaman utama Dashboard E-Commerce yang berhasil dijalankan menggunakan React JS dan Vite melalui server lokal
+   <img width="1366" height="673" alt="{595250A7-F04A-48BC-B588-E5C3DCEDD31C}" src="https://github.com/user-attachments/assets/4540fa0a-f601-4c60-8cb1-427adb88a1f9" />
+
